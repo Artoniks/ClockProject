@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #090f21;
+}
+
+.clck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+
+  background: url("./images/clock.png") center/cover;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+.clck:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #bbfcff;
+  border-radius: 50%;
+  z-index: 99;
+}
+.clck:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* годинна стрілка */
+.hoursArrow {
+  position: absolute;
+}
+.hr {
+  width: 190px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.hr:before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 110px;
+  background-color: rgb(32, 50, 94);
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+/* минутна стрілка */
+.minutesArrow {
+  position: absolute;
+}
+
+.mn {
+  width: 200px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+.mn:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 140px;
+  background-color: rgb(138, 138, 211);
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+  transform: 0.5s ease;
+}
+/* секундна стрілка */
+.secundesArrow {
+  position: absolute;
+}
+.sc {
+  width: 240px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+.sc:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 190px;
+  background-color: rgb(179, 249, 247);
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
