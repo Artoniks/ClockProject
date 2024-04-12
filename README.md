@@ -21,4 +21,4 @@ This project represents a simple digital clock implemented using JavaScript, HTM
 # Running Instructions
 
 1.  Download or clone the repository.
-2.  Open the index.html file in a web browser.
+2.  Open the clock.html file in a web browser.
