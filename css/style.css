@@ -11,7 +11,14 @@ body {
   width: 100%;
   background-color: #090f21;
 }
-
+:root {
+  --blue-light-color: #bbfcff;
+  --backgrond-color: rgba(255, 255, 255, 0.1);
+  --hours-arrow-color: rgb(32, 50, 94);
+  --minutes-arrow-color: rgb(138, 138, 211);
+  --secundes-arrow-color: rgb(179, 249, 247);
+}
+/*  */
 .clck {
   display: flex;
   justify-content: center;
@@ -19,7 +26,7 @@ body {
   width: 400px;
   height: 400px;
 
-  background: url("./images/clock.png") center/cover;
+  background: url("../images/clock.png") center/cover;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
   border-radius: 50%;
 }
@@ -28,7 +35,7 @@ body {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: #bbfcff;
+  background: var(--blue-light-color);
   border-radius: 50%;
   z-index: 99;
 }
@@ -39,7 +46,7 @@ body {
   left: 15px;
   width: calc(100% - 30px);
   height: calc(100% - 30px);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--backgrond-color);
   border-radius: 50%;
   z-index: -1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -62,7 +69,7 @@ body {
   content: "";
   width: 9px;
   height: 110px;
-  background-color: rgb(32, 50, 94);
+  background-color: var(--hours-arrow-color);
   z-index: 10;
   border-radius: 6px 6px 0 0;
 }
@@ -84,7 +91,7 @@ body {
   content: "";
   width: 7px;
   height: 140px;
-  background-color: rgb(138, 138, 211);
+  background-color: var(--minutes-arrow-color);
   z-index: 11;
   border-radius: 6px 6px 0 0;
   transform: 0.5s ease;
@@ -106,7 +113,7 @@ body {
   content: "";
   width: 5px;
   height: 190px;
-  background-color: rgb(179, 249, 247);
+  background-color: var(--secundes-arrow-color);
   z-index: 11;
   border-radius: 6px 6px 0 0;
 }
